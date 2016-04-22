@@ -29,6 +29,12 @@ General styles (General Module, wrapping around the modules bellow)
 
 body {}
 
+span {
+    color: red;
+    font-style: italic;
+    text-decoration: underline;
+}
+
 
 /* -------------------------------------
 Header styles (Main Module)
@@ -100,6 +106,7 @@ Content styles (Main Module)
     padding: 0.5em;
     margin: 3em;
     font-weight: bold;
+    color: gray;
 }
 
 .madlib {
