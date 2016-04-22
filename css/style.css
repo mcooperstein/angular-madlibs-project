@@ -1,0 +1,133 @@
+/* -------------------------------------
+CSS reset
+(all the browsers will see the website in the same by setting every tag to 0 (the website will look the same on all browsers))
+*/
+
+* {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    /*The box-sizing property is used to tell the browser what the sizing properties (width and height) should include border-box.*/
+    box-sizing: border-box;
+    /*reset Chrome user agent styles*/
+    -webkit-margin-before: 0px;
+    -webkit-margin-after: 0px;
+    -webkit-margin-start: 0px;
+    -webkit-margin-end: 0px;
+    -webkit-padding-before: 0px;
+    -webkit-padding-after: 0px;
+    -webkit-padding-start: 0px;
+    -webkit-padding-end: 0px;
+}
+
+
+/* -------------------------------------
+General styles (General Module, wrapping around the modules bellow)
+(the styles used everywhere in the page (like the Body) or styles which are used in more than 2 of the modules bellow (h2, h3, h4, h5, h6, p, a, ul, li))
+*/
+
+body {}
+
+
+/* -------------------------------------
+Header styles (Main Module)
+(all the styles inside the < header > or < nav > tags)
+*/
+
+.header {
+    display: inline-block;
+    width: 100%;
+    border: 5px solid black;
+}
+
+.face {
+    float: left;
+    border-width: 0px 5px 0px 0px;
+    border-style: solid;
+    border-color: black;
+    padding-left: 2em;
+    padding-right: 4em;
+}
+
+.logo {
+    float: right;
+    margin-right: 10em;
+}
+
+.logo img {
+    padding-left: 2.5em;
+}
+
+.logo h1 {
+    font-size: 4em;
+    text-align: center;
+    letter-spacing: .1em;
+    font-family: 'Potano Sans', 'Open Sans', sans-serif;
+}
+
+
+/* -------------------------------------
+Content styles (Main Module)
+(all the styles inside the < sections > or < aside > tags)
+*/
+
+.input-section {
+    width: 100%;
+    display: inline-block;
+    border-bottom: 5px solid black;
+}
+
+.input-section h2 {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-family: 'Potano Sans', 'Open Sans', sans-serif;
+}
+
+.input-section .words {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1em;
+    margin-bottom: 1em;
+}
+
+.input-section .words .input-box {
+    border: 1px solid blue;
+    text-align: center;
+    padding: 0.5em;
+    margin: 3em;
+    font-weight: bold;
+}
+
+.madlib {
+    width: 100%;
+}
+
+.madlib .sentences {
+    padding-top: 3em;
+    padding-bottom: 3em;
+}
+
+p {
+    width: 80%;
+    font-size: 1.5em;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+/* -------------------------------------
+Footer styles (Main Module)
+(all the styles inside the < footer > tag)
+*/
+
+
+/* -------------------------------------
+place all the desktop styles above this line
+Responsive styles
+(the very last module in the CSS, contains all the media queries and it is dealing with the compatibility with mobiles and tablets)
+place all the mobile tables styles bellow this line
+*/
