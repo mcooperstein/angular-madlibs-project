@@ -35,6 +35,14 @@ span {
     text-decoration: underline;
 }
 
+.male {
+    color: blue;
+}
+
+.female {
+    color: hotpink;
+}
+
 
 /* -------------------------------------
 Header styles (Main Module)
@@ -84,11 +92,28 @@ Content styles (Main Module)
     border-bottom: 5px solid black;
 }
 
+.input-section .gender {
+    text-align: center;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 2em;
+    font-family: 'Potano Sans', 'Open Sans', sans-serif;
+}
+
 .input-section h2 {
     text-align: center;
     margin-top: 1em;
     margin-bottom: 1em;
     font-size: 2em;
+    font-family: 'Potano Sans', 'Open Sans', sans-serif;
+}
+
+.input-section h4 {
+    text-align: center;
+    text-decoration: underline;
+    margin-top: 1em;
+    margin-bottom: 1em;
+    font-size: 1.5em;
     font-family: 'Potano Sans', 'Open Sans', sans-serif;
 }
 
