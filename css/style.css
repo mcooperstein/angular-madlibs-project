@@ -43,6 +43,14 @@ span {
     color: hotpink;
 }
 
+hr {
+    background-color: black;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2em;
+}
+
 
 /* -------------------------------------
 Header styles (Main Module)
@@ -118,20 +126,51 @@ Content styles (Main Module)
 }
 
 .input-section .words {
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
+    width: 100%;
     margin-top: 1em;
     margin-bottom: 1em;
 }
 
-.input-section .words .input-box {
+.input-section .words .input-group {
+    margin-left: auto;
+    margin-right: auto;
+    width: 80%;
+}
+
+.input-section .words .input-group .input-box {
     border: 1px solid blue;
     text-align: center;
     padding: 0.5em;
-    margin: 3em;
+    margin: 4em;
     font-weight: bold;
-    color: gray;
+    color: black;
+}
+
+.button-class {
+    width: 90%;
+    margin-bottom: 10em;
+    margin-top: 3em;
+}
+
+.button-class .button {
+    border-radius: 1em;
+    color: blue;
+    background-color: hotpink;
+    padding: 1em;
+    font-weight: bold;
+    float: right;
+    box-shadow: 10px 10px 5px #888888;
+}
+
+.errorMsg {
+    color: red;
+    font-weight: bold;
+    font-size: 1em;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    padding-bottom: 0.5em;
 }
 
 .madlib {
