@@ -8,7 +8,7 @@ function myCtrl($scope) {
         'femalename': "female name"
     ];
 };*/
-var app = angular.module('myApp', [])
+var app = angular.module('myApp', ['ngMessages']);
 
 /*app.constant('VERSION', "5")
 app.run(function (VERSION, $rootScope) {
@@ -16,10 +16,19 @@ app.run(function (VERSION, $rootScope) {
 })*/
 
 app.controller('myCtrl', function ($scope) {
-    $scope.inputs = {};
+    $scope.input = {};
     $scope.gender = ["male", "female"];
+
+    $scope.hideForm = false;
+
     $scope.submit = function () {
+        // hide the form only after submit
         $scope.hideForm = true;
+    }
+    $scope.reset = function () {
+        // show the input section and reset the input data
+        $scope.hideForm = false;
+        $scope.input = {};
     }
 
 });
