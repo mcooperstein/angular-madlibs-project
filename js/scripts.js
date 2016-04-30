@@ -8,7 +8,7 @@ function myCtrl($scope) {
         'femalename': "female name"
     ];
 };*/
-var app = angular.module('myApp', ['ngMessages']);
+var app = angular.module('myApp', ['ngMessages', 'ngAnimate']);
 
 /*app.constant('VERSION', "5")
 app.run(function (VERSION, $rootScope) {
@@ -27,8 +27,9 @@ app.controller('myCtrl', function ($scope) {
     }
     $scope.reset = function () {
         // show the input section and reset the input data
-        $scope.hideForm = false;
-        $scope.input = {};
+        //$scope.hideForm = false;
+        //$scope.input = {};
+        location.reload();
     }
 
 });
