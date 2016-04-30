@@ -100,6 +100,23 @@ Content styles (Main Module)
     border-bottom: 5px solid black;
 }
 
+
+/*.input-section.ng-hide-add,
+.input-section.ng-hide-remove {
+    transition: all linear 1.25s;
+    -webkit-animation: my_animation 1.5s linear;
+}
+
+.input-section.ng-hide-add,
+.input-section.ng-hide-remove.ng-hide-remove-active {
+    margin-top: 0em;
+}
+
+.input-section.ng-hide-remove,
+.input-section.ng-hide-add.ng-hide-add-active {
+    margin-top: -50em;
+}*/
+
 .input-section .gender {
     text-align: center;
     margin-top: 1em;
@@ -175,6 +192,31 @@ Content styles (Main Module)
 
 .madlib {
     width: 100%;
+}
+
+.madlib.ng-hide-remove,
+.madlib.ng-hide-add {
+    transition: all ease-in-out 1.5s;
+    -webkit-animation: my_animation 1.5s linear;
+}
+
+.madlib.ng-hide-remove,
+.madlib.ng-hide-add.ng-hide-add-active {
+    margin-left: 50em;
+}
+
+.madlib.ng-hide-add,
+.madlib.ng-hide-remove.ng-hide-remove-active {
+    margin-left: 0em;
+}
+
+@-webkit-keyframes my_animation {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1
+    }
 }
 
 .madlib .sentences {
